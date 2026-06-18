@@ -1,26 +1,22 @@
 import './../index.css'
+import Navbar from './Navbar'
 import Logo from "./Logo"
-import ProfileCard from './ProfileCard'
+import Button from './Button'
 
 export default function HeaderContainer() {
     
     return(
-        <>
         <header className="
-            grid grid-cols-2 gap-4
-            bg-[url('/src/assets/purple-black.png')] bg-cover bg-center 
-            w-full h-auto p-5
+            grid grid-cols-[1fr_2fr] gap-4 
+            w-full h-auto
         ">
-            <div className='flex'>
-                <Logo />
-            </div>  
+            <Logo />
 
-            <div className='flex flex-col'>
-                <ProfileCard />
-            </div>
-            
+            <Navbar>
+                    <Button size='base'>Project</Button>
+                    <Button size='base'>About me</Button>
+            </Navbar>
         </header>
-        </>
     )
 };
 

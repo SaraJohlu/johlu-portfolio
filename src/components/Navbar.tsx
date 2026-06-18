@@ -1,10 +1,24 @@
-import Button from "./button";
+import Button from "./Button";
+interface navbarProps {
+    children: React.ReactNode;
+    direction?: 'vertical' | 'horizontal';
+}
 
-export default function Navbar() {
+const directionClasses = {
+    vertical: 'flex flex-col justify-between items-start p-5',
+    horizontal: 'flex flex-row justify-between items-start p-5',
+}
+export default function Navbar({children, direction='horizontal'}: navbarProps) {
 
     return(
-        <>
-            <Button> Tryck på mig </Button>
-        </>
+        <nav className={`${directionClasses[direction]}`}>
+            <div className="flex gap-3">
+                {children}
+            </div>
+
+            <Button variant="attention" size="base">
+                Kontakta mig
+            </Button>
+        </nav>
     )
 };

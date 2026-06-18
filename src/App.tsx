@@ -1,4 +1,5 @@
 import HeaderContainer from './components/HeaderContainer'
+import ProfileCard from './components/ProfileCard'
 import './index.css'
 
 export default function App() {
@@ -6,19 +7,15 @@ export default function App() {
 
   return (
     <>
-      <body className='w-full'>
-        <HeaderContainer>
-
-        </HeaderContainer>
+        <HeaderContainer />
 
         <main>
-
+          <ProfileCard />
         </main>
 
         <footer>
 
         </footer>
-      </body>
     </>
   )
 }
