@@ -8,16 +8,16 @@ interface buttonProps {
 
 const sizeClasses = {
     small: 'p-1 text-sm',
-    base: 'p-2 text-base',
+    base: 'p-1 text-base',
     large: 'p-1 text-lg',
 }
 
 const variantClasses = {
-    default: 'bg-white border-2 border-purple-500 rounded-md shadow-sm shadow-fuchsia-500',
+    default: 'bg-white border-1 border-purple-500 rounded-md shadow-sm shadow-fuchsia-500',
     disable: '',
     warning: '',
     approve: '',
-    attention: 'bg-gradient-to-br from-purple-500 to-purple-100 border-2 border-purple-500 rounded-md shadow-sm shadow-fuchsia-500',
+    attention: 'bg-gradient-to-br from-purple-500 to-purple-100 border-1 border-purple-500 rounded-md shadow-sm shadow-fuchsia-500',
 }
 
 
