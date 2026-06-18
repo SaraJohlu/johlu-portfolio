@@ -3,7 +3,7 @@ export default function ProfileCard() {
         <article className="relative flex justify-center w-76 ">
             <img 
             src="/src/assets/ingenbakgrund.png" alt="Profilbild"
-            className='w-70 rounded-4xl rotate-4 bg-black rounded-[43%_50%_30%_50%/60%_25%_40%_25%] shadow-3xl'
+            className='w-70 rotate-4 bg-black rounded-[43%_50%_30%_50%/60%_25%_40%_25%] shadow-3xl'
             
             />
             <div className="

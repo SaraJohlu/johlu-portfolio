@@ -1,5 +1,5 @@
 import HeaderContainer from './components/HeaderContainer'
-import ProfileCard from './components/ProfileCard'
+import MainSide from './components/MainSide'
 import './index.css'
 
 export default function App() {
@@ -9,9 +9,7 @@ export default function App() {
     <>
         <HeaderContainer />
 
-        <main>
-          <ProfileCard />
-        </main>
+        <MainSide />
 
         <footer>
 

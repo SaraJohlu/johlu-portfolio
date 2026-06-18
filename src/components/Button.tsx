@@ -21,7 +21,7 @@ const variantClasses = {
     attention: 'bg-gradient-to-br from-black via-fuchsia-950 to-fuchsia-800 border-1 border-purple-500 rounded-md shadow-sm shadow-fuchsia-500 text-white',
 };
 
-export default function Button({ children, size='base', variant='default' }: buttonProps) {
+export default function Button({ children, size='small', variant='default' }: buttonProps) {
 
     return(
         <button className={`${sizeClasses[size]} ${variantClasses[variant]} ${baseClass}`}>

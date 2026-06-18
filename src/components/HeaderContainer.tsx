@@ -13,8 +13,8 @@ export default function HeaderContainer() {
             <Logo />
 
             <Navbar>
-                    <Button size='base'>Projects</Button>
-                    <Button size='base'>About me</Button>
+                    <Button>Projects</Button>
+                    <Button>About me</Button>
             </Navbar>
         </header>
     )

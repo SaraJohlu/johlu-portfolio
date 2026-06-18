@@ -16,7 +16,7 @@ export default function Navbar({children, direction='horizontal'}: navbarProps) 
                 {children}
             </div>
 
-            <Button variant="attention" size="base">
+            <Button variant="attention">
                 Contact
             </Button>
         </nav>
