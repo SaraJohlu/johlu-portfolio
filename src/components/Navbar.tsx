@@ -5,19 +5,19 @@ interface navbarProps {
 }
 
 const directionClasses = {
-    vertical: 'flex flex-col justify-between items-start p-5',
-    horizontal: 'flex flex-row justify-between items-start p-5',
+    vertical: 'flex flex-col justify-around items-start p-5',
+    horizontal: 'flex flex-row justify-around items-start p-4',
 }
 export default function Navbar({children, direction='horizontal'}: navbarProps) {
 
     return(
         <nav className={`${directionClasses[direction]}`}>
-            <div className="flex gap-3">
+            <div className="flex gap-2">
                 {children}
             </div>
 
             <Button variant="attention" size="base">
-                Kontakta mig
+                Contact
             </Button>
         </nav>
     )
