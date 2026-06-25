@@ -1,12 +1,13 @@
 import Button from "./Button";
 interface navbarProps {
     children: React.ReactNode;
-    direction?: 'vertical' | 'horizontal';
+    direction?: 'col' | 'row';
 }
 
 const directionClasses = {
-    vertical: 'flex flex-col justify-around items-start p-5',
-    horizontal: 'flex flex-row justify-around items-start p-4',
+    col:
+    'sm:flex sm:flex-col sm:justify-around sm:items-start sm:p-5 ',
+    row: 'flex flex-row justify-around items-start p-4',
 }
 export default function Navbar({children, direction='horizontal'}: navbarProps) {
 
@@ -17,7 +18,7 @@ export default function Navbar({children, direction='horizontal'}: navbarProps) 
             </div>
 
             <Button variant="attention">
-                Contact
+                Contact me
             </Button>
         </nav>
     )

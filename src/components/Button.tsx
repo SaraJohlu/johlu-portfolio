@@ -1,11 +1,12 @@
 import './../style/button.css'
+import './../style/styleThemes.css'
 interface buttonProps {
     children: React.ReactNode;
     size?: 'small'|'base'|'large';
     variant?: 'default' | 'disable' | 'warning' | 'approve' | 'attention';
 };
 
-const baseClass = 'cursor-pointer hover:bg-fuchsia-200'
+const baseClass = 'cursor-pointer hover:scale-110 hover:duration-150 hover:ease-in'
 
 const sizeClasses = {
     small: 'p-1 text-sm',
@@ -14,11 +15,13 @@ const sizeClasses = {
 };
 
 const variantClasses = {
-    default: 'bg-white rounded-sm shadow-sm shadow-fuchsia-950',
+    default:
+    'text-white bg-[var(--primary-bg-color)] rounded-md border-1 border-[var(--button-primary-border-color)] shadow-md shadow-pink-800',
     disable: '',
     warning: '',
     approve: '',
-    attention: 'bg-gradient-to-br from-black via-fuchsia-950 to-fuchsia-800 border-1 border-purple-500 rounded-md shadow-sm shadow-fuchsia-500 text-white',
+    attention:
+    'text-white bg-gradient-to-br from-black via-pink-700 to-rose-800 border-1 border-[var(--button-primary-border-color)] rounded-md shadow-sm shadow-pink-800',
 };
 
 export default function Button({ children, size='small', variant='default' }: buttonProps) {

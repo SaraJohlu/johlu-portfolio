@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme {
+    --primary-bg-color: rgb(14, 14, 14);
+    --primary-box-shadow-color: rgb(215, 29, 91);
+    --button-primary-border-color: rgb(215, 29, 91);
+}

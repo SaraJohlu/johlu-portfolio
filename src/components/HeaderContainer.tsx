@@ -7,7 +7,7 @@ export default function HeaderContainer() {
     
     return(
         <header className="
-            grid grid-cols-[2fr_3fr] gap-4 
+            grid grid-cols-[2fr_3fr] gap-4
             w-full h-auto
         ">
             <Logo />
@@ -20,4 +20,3 @@ export default function HeaderContainer() {
     )
 };
 
- 
