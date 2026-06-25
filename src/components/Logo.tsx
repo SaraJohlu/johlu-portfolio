@@ -1,17 +1,12 @@
-
+import './../style/logo.css'
 export default function Logo() {
 
     return(
         <>
-            <div className="w-full">
-               <img 
-               src="/src/assets/Johlu-logo.png" 
-               alt="logotype for my creation"
-               className='logotype w-86'
-                />
+            <div className='flex flex-col items-start justify-center leading-none bg-transparent p-2'>
+                <p className='logo-main-fontstyle text-center'>Johlu</p>
+                <p className='logo-creation-fontstyle text-center'>Creation</p>
             </div>
         </>
     )
 };
-
- 
